@@ -87,23 +87,17 @@ class _GameWinDialogState extends State<GameWinDialog> {
               child: Text(t?.levelSelection ?? 'Level selection'),
             ),
             const SizedBox(height: 16),
-           Expanded(
-                    child: GoogleWalletButton(
-                      style: GoogleWalletButtonStyle.condensed,
-                      height: 90,
-                      onPressed: () {
-                        widget.googleWalletDemo.savePass();
-
-                        // setState(() {
-                        //   cardAdded = true;
-                        // });
-                        // final collections =
-                        //     context.watch<CollectionsController>();
-                        // collections.setCard(widget.level.number.toString());
-                      },
-                      locale: Locale(locale),
-                    ),
-                  ),
+            Expanded(
+              child: GoogleWalletButton(
+                style: GoogleWalletButtonStyle.condensed,
+                height: 90,
+                onPressed: () {
+                  bool isJapanese = locale == "jp";
+                  widget.googleWalletDemo.savePass(isJapanese: isJapanese);
+                },
+                locale: Locale(locale),
+              ),
+            ),
           ],
         ),
       ),
