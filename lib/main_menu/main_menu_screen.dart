@@ -61,29 +61,33 @@ class MainMenuScreen extends StatelessWidget {
                   ),
                 ),
                 _gap,
-                WobblyButton(
-                  onPressed: () {
-                    audioController.playSfx(SfxType.buttonTap);
-                    //Background Music Off
-                    // settingsController.audioOff();
-                    audioController.stopAllSound();
-                    GoRouter.of(context).go('/knowledge');
-                  },
-                  child: Text(
-                    t?.knowledge ?? 'Knowledge',
+                Flexible(
+                  child: WobblyButton(
+                    onPressed: () {
+                      audioController.playSfx(SfxType.buttonTap);
+                      //Background Music Off
+                      // settingsController.audioOff();
+                      audioController.stopAllSound();
+                      GoRouter.of(context).go('/knowledge');
+                    },
+                    child: Text(
+                      t?.knowledge ?? 'Knowledge',
+                    ),
                   ),
                 ),
                 _gap,
-                WobblyButton(
-                  onPressed: () {
-                    audioController.playSfx(SfxType.buttonTap);
-                    NesDialog.show(
-                      context: context,
-                      builder: (_) => const InstructionsDialog(),
-                    );
-                  },
-                  child: Text(
-                    t?.instructions ?? 'Instructions',
+                Flexible(
+                  child: WobblyButton(
+                    onPressed: () {
+                      audioController.playSfx(SfxType.buttonTap);
+                      NesDialog.show(
+                        context: context,
+                        builder: (_) => const InstructionsDialog(),
+                      );
+                    },
+                    child: Text(
+                      t?.instructions ?? 'Instructions',
+                    ),
                   ),
                 ),
               ],

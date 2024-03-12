@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:nes_ui/nes_ui.dart';
 import 'package:ocean_cleanup/style/wobbly_button.dart';
 import 'package:ocean_cleanup/utils/context.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 /// A widget that makes it easy to create a screen with a square-ish
 /// main area, a smaller menu area, and a small area for a message on top.
@@ -146,9 +147,10 @@ class _MobileWebNotAvailablePage extends StatelessWidget {
               child: WobblyButton(
                 // type: NesButtonType.success,
                 onPressed: () {
-                  // launchUrl(Uri.parse(Urls.playStoreLink));
+                  launchUrl(Uri.parse(
+                      "https://drive.google.com/drive/folders/17Ao1iFOBqwMLpMo_UVeWu_pmZnzYEmKo"));
                 },
-                child: const Text("Download(Coming soon)"),
+                child: const Text("Download"),
               ),
             ),
           ],
