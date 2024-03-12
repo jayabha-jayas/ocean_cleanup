@@ -61,7 +61,7 @@ Our next steps involve creating more levels for the game with all the issues hap
 Our next steps involve releasing the game on the Play Store and App Store to reach a wider audience. We aim to continue spreading awareness about the environmental issues highlighted in the game and inspire more individuals to take action.
 
 ## How to run the project
-To play the game on the web, you can visit the https://droidbg.github.io/ .
+To play the game on the web, you can visit the https://jayabha-jayas.github.io/ocean_cleanup/ .
 
 To run the project locally:
 Clone the repository from https://github.com/jayabha-jayas/ocean_cleanup \
