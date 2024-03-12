@@ -28,7 +28,7 @@ dependencies:
   intl: ^0.18.0
   flutter_localizations:
     sdk: flutter
-  rive: ^0.13.0
+#  rive: ^0.13.0
   youtube_player_iframe: 5.0.0
 
 dev_dependencies:

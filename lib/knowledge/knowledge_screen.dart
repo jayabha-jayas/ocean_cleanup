@@ -50,14 +50,16 @@ class _KnowledgeScreenState extends State<KnowledgeScreen> {
           Expanded(
             child: Row(
               children: [
-                NesIconButton(
-                  icon: NesIcons.leftArrowIndicator,
-                  onPress: () {
-                    _pageController.previousPage(
-                      duration: const Duration(milliseconds: 200),
-                      curve: Curves.easeInOut,
-                    );
-                  },
+                SafeArea(
+                  child: NesIconButton(
+                    icon: NesIcons.leftArrowIndicator,
+                    onPress: () {
+                      _pageController.previousPage(
+                        duration: const Duration(milliseconds: 200),
+                        curve: Curves.easeInOut,
+                      );
+                    },
+                  ),
                 ),
                 Expanded(
                   child: PageView(
@@ -107,8 +109,7 @@ class _KnowledgeScreenState extends State<KnowledgeScreen> {
                         pageNumber: 5,
                         videoId: 'L8pEdHzQcik',
                         heading: "# ${t?.giantBarriers} ",
-                        content:
-                            "${t?.pageFiveContent}",
+                        content: "${t?.pageFiveContent}",
                         credits:
                             '${t?.videoCourtesy ?? "Video Courtesy"} : Business Insider',
                       ),
@@ -125,14 +126,16 @@ class _KnowledgeScreenState extends State<KnowledgeScreen> {
                     ],
                   ),
                 ),
-                NesIconButton(
-                  icon: NesIcons.rightArrowIndicator,
-                  onPress: () {
-                    _pageController.nextPage(
-                      duration: const Duration(milliseconds: 200),
-                      curve: Curves.easeInOut,
-                    );
-                  },
+                SafeArea(
+                  child: NesIconButton(
+                    icon: NesIcons.rightArrowIndicator,
+                    onPress: () {
+                      _pageController.nextPage(
+                        duration: const Duration(milliseconds: 200),
+                        curve: Curves.easeInOut,
+                      );
+                    },
+                  ),
                 ),
               ],
             ),
