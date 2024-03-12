@@ -1,0 +1,59 @@
+name: ocean_cleanup
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+  flame: ^1.10.1
+  palette_generator: ^0.3.3+3
+  flame_audio:
+  shared_preferences: ^2.2.2
+  google_wallet: 0.1.1
+  url_launcher: ^6.2.5
+  provider: ^6.1.2
+  google_fonts: ^6.2.0
+  nes_ui: ^0.18.0
+  go_router: ^13.2.0
+  neon_widgets: ^2.0.0
+  flutter_svg: ^2.0.5
+  intl: ^0.18.0
+  flutter_localizations:
+    sdk: flutter
+  rive: ^0.13.0
+  youtube_player_iframe: 5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/animate/
+    - assets/audio/
+    - assets/music/
+    - assets/icons/
+    - assets/sfx/
+  fonts:
+    - family: VictorianSecret
+      fonts:
+        - asset: assets/fonts/victorian_secret.otf
+    - family: Press Start 2P
+      fonts:
+        - asset: assets/fonts/Press_Start_2P/PressStart2P-Regular.ttf
+
